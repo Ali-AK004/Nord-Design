@@ -212,13 +212,16 @@ button {
         display: flex;
         gap: 20px;
         max-width: 500px;
+        width: calc(100% - 20px);
         overflow-x: scroll;
         &::-webkit-scrollbar {
           display: none;
         }
         & img {
-          width: 225px;
-          object-fit: contain;
+          width: 240px;
+          object-fit: cover;
+          aspect-ratio: 9 / 16;
+          cursor: grab;
         }
       }
     }
@@ -410,6 +413,13 @@ button {
   }
   .landing .text p {
     margin-inline: auto;
+  }
+  .landing::before,
+  .landing::after {
+    display: none;
+  }
+  .container .features {
+    margin-top: 0;
   }
   .container .joinUs {
     margin-top: 0;
