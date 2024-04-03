@@ -2,6 +2,5 @@
 ## Tech Used :
 
 - HTML 5 Semantics
-- CSS
-- CSS Flexbox
+- Modern CSS
 - Vanilla JavaScript
