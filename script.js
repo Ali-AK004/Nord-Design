@@ -19,7 +19,7 @@ upArrow.onclick = function () {
 };
 
 window.addEventListener("scroll", function () {
-  if (this.scrollY >= 500) {
+  if (this.scrollY >= 400) {
     upArrow.style.display = "block";
   } else {
     upArrow.style.display = "none";
