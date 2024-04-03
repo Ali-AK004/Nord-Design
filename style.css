@@ -19,6 +19,7 @@
 
 body {
   overflow-x: hidden;
+  position: relative;
 }
 
 a {
@@ -54,6 +55,24 @@ button {
       width: 22px;
       border-radius: 9999px;
     }
+  }
+}
+
+.upArrow {
+  background-color: var(--blue);
+  padding: 12px;
+  width: fit-content;
+  margin-left: auto;
+  position: sticky;
+  right: 30px;
+  bottom: 30px;
+  font-size: 22px;
+  text-align: center;
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: var(--blueAlt);
   }
 }
 
