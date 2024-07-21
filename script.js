@@ -1,5 +1,6 @@
 const dots = document.querySelectorAll(".dot-shapes .dot");
 const upArrow = document.querySelector(".upArrow");
+const showDate = document.querySelector(".date");
 
 dots.forEach((dot) => {
   dot.addEventListener("click", function (event) {
@@ -25,3 +26,6 @@ window.addEventListener("scroll", function () {
     upArrow.style.display = "none";
   }
 });
+
+const date = new Date().getFullYear();
+showDate.append(date);

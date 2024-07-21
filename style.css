@@ -403,6 +403,10 @@ button {
       font-weight: var(--fw-regular);
       & span {
         color: var(--blue);
+        &:first-child {
+          font-weight: bold;
+          color: black;
+        }
       }
     }
   }
