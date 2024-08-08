@@ -75,12 +75,13 @@ button {
   padding: 12px;
   width: fit-content;
   margin-left: auto;
-  position: sticky;
+  position: fixed;
   right: 30px;
   bottom: 30px;
   font-size: 22px;
   text-align: center;
   color: var(--white);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: all 0.3s ease;
   &:hover {
@@ -242,9 +243,11 @@ button {
       & .img {
         display: flex;
         gap: 20px;
-        max-width: 500px;
+        max-width: 280px;
         width: calc(100% - 20px);
-        overflow-x: scroll;
+        overflow-x: auto;
+        cursor: grab;
+        user-select: none;
         &::-webkit-scrollbar {
           display: none;
         }
@@ -252,7 +255,6 @@ button {
           width: 240px;
           object-fit: cover;
           aspect-ratio: 9 / 16;
-          cursor: grab;
         }
       }
     }
@@ -307,6 +309,19 @@ button {
           transform: translateY(-50%);
           border: 20px solid;
           border-color: transparent var(--white) transparent transparent;
+        }
+        & .content-holder {
+          display: flex;
+          gap: 20px;
+          overflow-x: auto;
+          max-width: 500px;
+          margin-bottom: 20px;
+          & p {
+            min-width: 500px;
+          }
+          &::-webkit-scrollbar {
+            display: none;
+          }
         }
         & span {
           color: var(--blue);
@@ -464,7 +479,10 @@ button {
     margin-left: 20px;
   }
   .container .testimonials .text {
-    margin-inline: 20px;
+    padding: 1rem;
+    max-width: 500px;
+    font-size: 12px;
+    text-align: left;
   }
   .container .testimonials .testimonial-holder > img,
   .container .testimonials .testimonial-holder .text::before {
