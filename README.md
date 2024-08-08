@@ -1,8 +1,8 @@
 # Welcome To Nord-Design
 
-## Tech Used :
-
 ![Design Preview](./assets/Nord-Template.jpg)
+
+## Tech Used :
 
 - HTML 5 Semantics
 - Modern CSS
